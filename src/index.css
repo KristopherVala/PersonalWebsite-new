@@ -1,0 +1,123 @@
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center {
+  align-items: center;
+}
+
+/*************************/
+/* Media Queries */
+/*************************/
+
+@media (max-width: 1056px) {
+  .main-about-header {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .my-photo {
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 40rem;
+    margin-right: 2rem;
+  }
+  .photo {
+    max-width: 75%;
+  }
+
+  .my-photo::after {
+    width: 95%;
+    padding-bottom: 95%;
+  }
+
+  .my-photo::before {
+    width: 85%;
+    padding-bottom: 85%;
+  }
+}
+@media (max-width: 805px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .my-photo {
+    margin-bottom: 5rem;
+    margin-right: 0rem;
+  }
+  .photo {
+    max-width: 50%;
+  }
+
+  .my-photo::after {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .my-photo::before {
+    width: 55%;
+    padding-bottom: 55%;
+  }
+  .contactButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .d {
+    grid-row-start: 3;
+  }
+
+  .h {
+    grid-row-start: 7;
+  }
+}
+@media (max-width: 1252px) {
+  .container {
+    background-size: cover;
+  }
+  .name-section {
+    font-size: 5.5rem;
+
+    text-align: center;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .main-about-header {
+    font-size: 6.5rem;
+    text-align: center;
+  }
+}

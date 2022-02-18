@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center {
+  align-items: center;
+}
+
+/*************************/
+/* Media Queries */
+/*************************/
+
+@media (max-width: 1056px) {
+  .main-about-header {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .my-photo {
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 40rem;
+    margin-right: 2rem;
+  }
+  .photo {
+    max-width: 75%;
+  }
+
+  .my-photo::after {
+    width: 95%;
+    padding-bottom: 95%;
+  }
+
+  .my-photo::before {
+    width: 85%;
+    padding-bottom: 85%;
+  }
+
+  .techPhotosSection {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 805px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .my-photo {
+    margin-bottom: 5rem;
+    margin-right: 0rem;
+  }
+  .photo {
+    max-width: 50%;
+  }
+
+  .my-photo::after {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .my-photo::before {
+    width: 55%;
+    padding-bottom: 55%;
+  }
+}
+
+@media (max-width: 470px) {
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .grid--4-cols {
+    margin-top: 7rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .a {
+    grid-row-start: 1;
+  }
+  .b {
+    grid-row-start: 2;
+  }
+  .a1 {
+    grid-row-start: 3;
+  }
+
+  .dear {
+    grid-row-start: 4;
+    grid-column: 1/-1;
+  }
+  .c {
+    grid-row-start: 5;
+  }
+  .a2 {
+    grid-row-start: 6;
+  }
+
+  .e {
+    grid-row-start: 7;
+  }
+  .f {
+    grid-row-start: 8;
+  }
+  .a3 {
+    grid-row-start: 9;
+  }
+
+  .stat {
+    grid-row-start: 10;
+  }
+  .g {
+    grid-row-start: 11;
+  }
+  .projectUnderline {
+  }
+}
+@media (max-width: 1252px) {
+  .container {
+    background-size: cover;
+  }
+  .name-section {
+    font-size: 5.5rem;
+
+    text-align: center;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .main-about-header {
+    font-size: 6.5rem;
+    text-align: center;
+  }
+}

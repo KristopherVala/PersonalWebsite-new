@@ -1,0 +1,168 @@
+/*************************/
+/* about */
+/*************************/
+
+.about-section {
+  /* background-color: #edf2ff; */
+  padding-top: 10rem;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+
+.container-non {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.my-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.my-photo::after,
+.my-photo::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .my-photo::after {
+  width: 60%;
+  background-color: #5c7cfa28;
+  padding-bottom: 60%;
+  z-index: 1;
+}
+
+.my-photo::before {
+  width: 55%;
+  background-color: #edf2ff;
+
+  padding-bottom: 55%;
+  z-index: 2;
+} */
+
+.photo {
+  border-radius: 50%;
+  max-width: 35%;
+  z-index: 3;
+  box-shadow: 0rem 1rem 3rem 0.5rem rgba(0, 0, 0, 0.185);
+}
+
+/* Header text */
+/*************************/
+
+.main-about-header {
+  font-size: 7rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  border-top: 2px solid black;
+  color: #000000;
+}
+
+.about-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.bottom-text {
+  margin-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.contactButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.contactButton {
+  cursor: pointer;
+  max-height: 75%;
+}
+
+.contactButton:hover {
+  color: black;
+}
+/* Photos */
+
+.techPhotosSection {
+  display: grid;
+  max-width: 60%;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  gap: 1rem;
+  row-gap: 3rem;
+}
+.techPhotos {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.individualTech {
+  max-width: 100%;
+  height: 7rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1265px) {
+  .techPhotosSection {
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1043px) {
+  .techPhotosSection {
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 913px) {
+  .techPhotosSection {
+    row-gap: 3rem;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .techPhotosSection.grid--4-cols {
+    max-width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .techPhotosSection {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .techPhotosSection {
+    padding-bottom: 2rem;
+  }
+}

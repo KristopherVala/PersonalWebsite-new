@@ -1,0 +1,313 @@
+.resumeContainer {
+  display: grid;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/*************************/
+/* Certifications Section */
+/*************************/
+
+.certContainer {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+  /* background-color: #bec2cc65; */
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.certGrid {
+  display: grid;
+  max-width: 55%;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
+.certTitle {
+  display: flex;
+  font-weight: 700;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.grid--2-cols-resume {
+  grid-template-columns: 25% 50% 25%;
+}
+
+.certDescription {
+  /* background-color: #d5dae6; */
+  /* box-shadow: 0rem 1px 10px 0px rgba(0, 0, 0, 0.555); */
+  max-width: 100%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.awsLogos {
+  max-width: 65%;
+}
+
+/*************************/
+/* Work Experience Section */
+/*************************/
+
+.workExperience {
+  margin-left: 5rem;
+  margin-top: 5rem;
+}
+
+.expheaderText {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.jobTitle {
+  font-size: 2.8rem;
+  max-width: 85%;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.jobTitleMiddle {
+  border-top: 1px solid black;
+  max-width: 75%;
+  padding-top: 4rem;
+}
+
+.sectionDivider {
+  border-top: 0.3rem solid black;
+  max-width: 75%;
+  padding-top: 4rem;
+}
+
+.jobInfo {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+/* List of duties */
+
+.jobSection {
+  margin-bottom: 2rem;
+}
+
+.dutiesText {
+  font-size: 1.6rem;
+  max-width: 50%;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+.bottom-text {
+  margin-bottom: 0;
+}
+
+/*************************/
+/* Skills Header */
+/*************************/
+
+.skillsSide {
+  margin-top: 5rem;
+}
+.skillsHeader {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  grid-column: 1/-1;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.oneCol {
+  grid-column: 1/-1;
+  max-width: 100%;
+  margin-bottom: 0;
+  padding: 0;
+}
+.skillsText {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+.skillsGrid {
+  row-gap: 2rem;
+  column-gap: 0;
+  max-width: 50%;
+  margin-top: 15%;
+}
+
+/*************************/
+/* Media Queries */
+/*************************/
+
+@media (max-width: 1560px) {
+  .certGrid {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1056px) {
+  .main-about-header {
+    font-size: 6rem;
+    text-align: center;
+  }
+  .my-photo {
+    max-width: 100%;
+    display: flex;
+    margin-bottom: 40rem;
+    margin-right: 2rem;
+  }
+  .photo {
+    max-width: 75%;
+  }
+
+  .my-photo::after {
+    width: 95%;
+    padding-bottom: 95%;
+  }
+
+  .my-photo::before {
+    width: 85%;
+    padding-bottom: 85%;
+  }
+}
+@media (max-width: 1250px) {
+  .certGrid {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .workExperience {
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .grid--1-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--2-cols-resume {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .test5 {
+    grid-row-start: 2;
+  }
+
+  .expHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jobTitle,
+  .jobInfo {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .jobTitleMiddle {
+    padding-bottom: 2rem;
+  }
+
+  .dutiesText {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .certContainer {
+    max-width: 70%;
+  }
+  .jobTitleMiddle {
+    margin: 0 auto;
+    max-width: 70%;
+  }
+
+  .sectionDivider {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .certGrid {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .dutiesText {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .certContainer {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 805px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .my-photo {
+    margin-bottom: 5rem;
+    margin-right: 0rem;
+  }
+  .photo {
+    max-width: 50%;
+  }
+
+  .my-photo::after {
+    width: 60%;
+    padding-bottom: 60%;
+  }
+
+  .my-photo::before {
+    width: 55%;
+    padding-bottom: 55%;
+  }
+}
+
+@media (max-width: 470px) {
+  .grid--2-cols {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .d {
+    grid-row-start: 3;
+  }
+
+  .h {
+    grid-row-start: 7;
+  }
+}
+@media (max-width: 1252px) {
+  .container {
+    background-size: cover;
+  }
+  .name-section {
+    font-size: 5.5rem;
+
+    text-align: center;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .main-about-header {
+    font-size: 6.5rem;
+    text-align: center;
+  }
+}
