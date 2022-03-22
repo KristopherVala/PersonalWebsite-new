@@ -158,14 +158,14 @@ const resume = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 1, delay: 0.9 }}
           >
-            <div className="grid grid--2-cols skillsGrid">
+            <div className="grid grid--2-cols skillsGrid skillsGridMobile">
               <h3 className="skillsHeader"> Skills</h3>
               <div className="sectionDivider oneCol"></div>
-              <div>
-                <h2 className="skillsText">React</h2>
+              <div className="wideSpan">
+                <h2 className="skillsText ">React</h2>
               </div>
-              <div>
-                <h2 className="skillsText">JavaScript</h2>
+              <div className="wideSpan">
+                <h2 className="skillsText ">JavaScript</h2>
               </div>
               <div>
                 <h2 className="skillsText">HTML5</h2>

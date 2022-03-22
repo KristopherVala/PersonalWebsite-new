@@ -3,6 +3,9 @@
   margin-left: 3rem;
   margin-right: 3rem;
 }
+.resume-page {
+  padding-top: 10rem;
+}
 
 /*************************/
 /* Certifications Section */
@@ -110,15 +113,15 @@
 /*************************/
 
 .skillsSide {
+  margin: 0 auto;
   margin-top: 5rem;
 }
 .skillsHeader {
   font-size: 4.5rem;
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   grid-column: 1/-1;
   max-width: 70%;
-  margin: 0 auto;
 }
 .oneCol {
   grid-column: 1/-1;
@@ -134,10 +137,15 @@
   font-weight: 500;
 }
 .skillsGrid {
-  row-gap: 2rem;
+  row-gap: 1rem;
   column-gap: 0;
   max-width: 50%;
   margin-top: 15%;
+}
+
+.wideSpan {
+  grid-column: 1/-1;
+  max-width: 100%;
 }
 
 /*************************/
@@ -235,6 +243,24 @@
   .sectionDivider {
     max-width: 100%;
   }
+  /* Skills */
+
+  .skillsGrid {
+    padding-top: 3rem;
+    max-width: 50%;
+    margin-bottom: 2rem;
+    margin: 0 auto;
+  }
+  .skillsSide {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .skillsHeader {
+    max-width: 100%;
+  }
+  .sectionDivider {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 700px) {
@@ -283,6 +309,10 @@
   .grid--2-cols {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  .skillsGridMobile {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
 
   .d {

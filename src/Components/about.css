@@ -4,7 +4,7 @@
 
 .about-section {
   /* background-color: #edf2ff; */
-  padding-top: 10rem;
+  padding-top: 15rem;
   min-height: 100vh;
   padding-bottom: 3rem;
 }
@@ -147,6 +147,9 @@
 }
 
 @media (max-width: 600px) {
+  .about-section {
+    padding-top: 10rem;
+  }
   .techPhotosSection.grid--4-cols {
     max-width: 100%;
     padding: 2rem;
